@@ -5,8 +5,8 @@ import Home from './Home';
 import MyNotes from './MyNotes';
 import Favorites from './Favorites';
 import NotePage from './NotePage';
-import SignUp from './signUp';
-import SignIn from './signIn';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
 //Оборачиваем в главный компонент, чтобы на каждой странице были такие компоненты как Header и т.д.
 import Layout from '../components/Layout';
 
