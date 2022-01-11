@@ -49,8 +49,8 @@ const Header = props => {
             onClick={() => {
               // Удаляем токен
               localStorage.removeItem('token');
-              // Очищаем кэш приложения
-              client.resetStore();
+              // Очищаем кэш приложения (был client.resetStore())
+              client.cache.reset();
               // Обновляем локальное состояние
               client.writeData({ data: { isLoggedIn: false } });
               // Перенаправляем пользователя на домашнюю страницу

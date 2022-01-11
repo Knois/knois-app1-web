@@ -41,7 +41,7 @@ const data = {
 // Записываем кэшированные данные при начальной загрузке
 cache.writeData({ data });
 // Записываем данные кэша после его сброса
-client.onResetStore(() => cache.writeData({ data:{} }));
+client.onResetStore(() => cache.writeData({ data: {} }));
 
 const App = () => (
   <ApolloProvider client={client}>
